@@ -1,29 +1,13 @@
-
 *,
 *::after,
 *::before{
     box-sizing: border-box;
 }
 
-.even {
-    background-color: blue;
+html, body{
+    margin: 0;
+    padding: 0;
 }
-.not_even {
-    background-color: yellow;
-}
-table {
-    border: 1px solid grey;
-}
-th {
-    border: 1px solid grey;
-}
-td {
-    border: 1px solid grey;
-}
-
-
-
-
 
 #my_header {
     background-image: url(images/imagine.jpg);
@@ -39,11 +23,6 @@ td {
 .content {
     max-width: 960px;
     margin: 0 auto;
-}
-
-html, body{
-    margin: 0;
-    padding: 0;
 }
 
 .container{
@@ -63,6 +42,16 @@ html, body{
 
 .my_table {
     border: 3px solid #2c2b2b;
+}
+
+table {
+    border: 1px solid grey;
+}
+th {
+    border: 1px solid grey;
+}
+td {
+    border: 1px solid grey;
 }
 
 .table-primary {
