@@ -1,3 +1,4 @@
+
 *,
 *::after,
 *::before{
@@ -38,11 +39,22 @@ th {
 td {
     border: 1px solid grey;
 }
+
+
 .my_table {
-    border: 1px solid #2c2b2b;
+    border: 3px solid #2c2b2b;
 }
+
+.table-primary {
+    background-color: aqua;
+}
+
+.table-secondary {
+    background-color: #61a1b9;
+}
+
 .my_form {
-    background-color: #ab9092;
+    background-color: #b26a6c;
 }
 
 .my_footer {
@@ -50,3 +62,4 @@ td {
     height: 85px;
     background-color: antiquewhite;
 }
+
