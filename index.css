@@ -1,0 +1,52 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 0 220px 220px;
+}
+#my_header {
+    height: 171px;
+    background-image: url(images/Шапка.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+/*#my_footer {*/
+/*    width: auto;*/
+/*    height: 85px;*/
+/*    background-color: antiquewhite;*/
+/*}*/
+.even {
+    background-color: blue;
+}
+.not_even {
+    background-color: yellow;
+}
+table {
+    border: 1px solid grey;
+}
+th {
+    border: 1px solid grey;
+}
+td {
+    border: 1px solid grey;
+}
+.my_table {
+    border: 1px solid #2c2b2b;
+}
+.my_form {
+    background-color: #ab9092;
+}
+
+.my_footer {
+    width: auto;
+    height: 85px;
+    background-color: antiquewhite;
+}
