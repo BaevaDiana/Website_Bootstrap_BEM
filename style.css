@@ -13,12 +13,7 @@ html, body{
     max-width: 960px;
     padding: 0 220px 220px;
 }
-#my_header {
-    height: 171px;
-    background-image: url(images/Шапка.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
+
 /*#my_footer {*/
 /*    width: auto;*/
 /*    height: 85px;*/
@@ -38,6 +33,16 @@ th {
 }
 td {
     border: 1px solid grey;
+}
+
+#my_header {
+    background-image: url(images/imagine.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.imag{
+    width: 100px;
+    height: 100px;
 }
 
 
