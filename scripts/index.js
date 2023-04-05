@@ -1,6 +1,7 @@
 class FormSubmitter {
   constructor(form) {
     this.form = form;
+    this.controller = new AbortController();
   }
 
   async submit() {
@@ -9,8 +10,10 @@ class FormSubmitter {
     try {
       const response = await fetch('https://formcarry.com/s/n1svXQBAW-', {
         method: 'POST',
-        body: formData
+        body: formData,
+        signal: this.controller.signal
       });
+      // проверка ошибок
       if (response.ok) {
         return await response.json();
       } else {
@@ -19,6 +22,9 @@ class FormSubmitter {
     } catch (error) {
       console.error('Ошибка:', error);
     }
+  }
+  abort() {
+    this.controller.abort();
   }
 }
 
@@ -33,4 +39,10 @@ form.addEventListener('submit', async (event) => {
   } catch (error) {
     console.error('Ошибка:', error);
   }
+});
+
+// отмена запроса
+const abortButton = document.querySelector('.abort_button');
+abortButton.addEventListener('click', () => {
+  submitter.abort();
 });
