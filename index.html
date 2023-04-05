@@ -154,19 +154,16 @@
         <textarea name="my_notes" class="form-control">Поделитесь здесь своими мыслями и предложениями</textarea>
     </div>
 
-    <!--    оформление списка с помощью combobox(не получилось, на страничке всё отображалось неправильно-->
+    <!--    оформление списка с помощью combobox-->
     <div class="form-group">
-        <!--        form-group используется для группировки элементов формы-->
-        <div class="btn-group btn-group-toggle" data-toggle="buttons">
-            <!--            btn-group - для создания контейнера для радио-кнопок, а btn-group-toggle применяется к контейнеру, чтобы включить поведение переключения кнопок.-->
+        <label for="combobox" class="form-label" Ваш пол></label>
+        <div class="input-group">
             <label class="form-label">Выберите Ваш пол:</label>
             <br>
-            <label class="btn btn-secondary active">
-                <input type="radio" name="my_radio" value="1" checked> Мужчина
-            </label>
-            <label class="btn btn-secondary">
-                <input type="radio" name="my_radio" value="2"> Женщина
-            </label>
+            <select id="combobox" name="combobox" class="form-select custom-select">
+                <option value="option1">Женский</option>
+                <option value="option2">Мужской</option>
+            </select>
         </div>
     </div>
 
