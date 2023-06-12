@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
-    <title>Задание 1</title>
+    <title>Задание 1,2</title>
 </head>
 <body>
 
@@ -16,209 +16,263 @@
 </header>
 
 <div class="container">
-<!--    оформление меню со ссылками-->
-    <nav class="content">
-        <h3 class="h3">Меню</h3>
-        <a href="#link_list" class="link">Список ссылок</a> |
-        <a href="#my_table" class="link">Таблица</a>|
-        <a href="#my_form" class="link">Форма для заполнения</a>
-    </nav>
-    <br>
+<!--    <div class="row">-->
+        <div class="col-12">
+            <!--    оформление меню со ссылками-->
+            <nav class="content">
+                <h3 class="h3">Меню</h3>
+                <a href="#link_list" class="link">Список ссылок</a> |
+                <a href="#my_table" class="link">Таблица</a>|
+                <a href="#my_form" class="link">Форма для заполнения</a>
+            </nav>
+            <br>
+        </div>
+<!--    </div>-->
 
-<!--    оформление списка ссылок-->
-    <a name="link_list"></a>
-    <h1 class="content">Список ссылок</h1>
-    <ol class="content">
-        <li><a href="https://ru.top-cat.org" id="#flag">Абсолютная гиперссылка на главную страницу сайта</a></li>
-        <li><a href="https://www.anekdot.ru">Абсолютная на главную в протоколе https</a></li>
-        <li><a href="ftp://ubisoft.com/games/example">Ссылка на файл на сервере FTP без авторизации</a></li>
-        <li><a href="ftp://user:password@ubisoft.com/games/example">С авторизацией</a></li>
-        <li>
-            <a href="https://ru.wikipedia.org/wiki/Википедия:Внутренние_ссылки#На_что_следует_ссылаться">
-                Ссылка на фрагмент страницы некоторого сайта
-            </a>
-        </li>
-        <li><a href="#my_table">Cсылка на фрагмент текущей страницы</a></li>
-        <li><a href="https://idroo.com/?a=0&c=1">Cсылка с двумя параметрами</a></li>
-        <li>
-            <ul>
-                <li><a href="#element_id" title="О чём">Оглавление</a></li>
-            </ul>
-        </li>
-        <li><a href="">Ссылка с пустым href</a></li>
-        <li><a href="https://ru.top-cat.org" rel="nofollow">Запрет перехода поисковикам</a></li>
-        <li><a href="https://ru.top-cat.org" rel="noindex">Запрещенная для индексации поисковиками</a></li>
-        <li>
-            <p>
-                Я очень люблю читать самые смешные <a href="https://www.anekdot.ru">анекдоты.</a>
-            </p>
-        </li>
-        <li>
-            <a href="https://ru.wikipedia.org/wiki/Муравьи">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/Fire_ants02.jpg?uselang=ru" width="200" height="200" alt="">
-            </a>
-        </li>
-        <li>
-            <img src="https://upload.wikimedia.org/wikipedia/ru/6/63/Feels_good_man.jpg" width="200" height="200" usemap="#Лягушонок Пепе" alt="">
-            <map name="Лягушонок Пепе">
-                <area shape="circle" coords="100,100,50" href="https://www.youtube.com/watch?v=RsyxePZ_BzU&ab_channel=%D0%BD%D0%B5%D0%B1%D1%83%D0%B4%D0%B8" alt="">
-                <area shape="rect" coords="150,150,200,200" href="https://ru.wikipedia.org/wiki/Прямоугольник" alt="">
-            </map>
-        </li>
-        <li><a href="index.html">Относительная ссылка на index.html в текущем каталоге</a></li>
-        <li><a href="../index.html">Относительная ссылка на index.html в каталоге уровнем выше</a></li>
-        <li><a href="../../index.html">Относительная ссылка на index.html м на страницу в каталоге двумя уровнями выше текущего</a></li>
-        <li><a href="index.html">Сокращенная ссылка на главную</a></li>
-        <li><a href="#my_form">Сокращенная ссылка на внутреннюю</a></li>
-    </ol>
-    <br>
+<!--    <div class="row">-->
+        <div class="col-12">
+            <!--    оформление списка ссылок-->
+            <a name="link_list"></a>
+            <h1 class="content">Список ссылок</h1>
+            <ol class="content">
+                <li><a href="https://ru.top-cat.org" id="#flag">Абсолютная гиперссылка на главную страницу сайта</a></li>
+                <li><a href="https://www.anekdot.ru">Абсолютная на главную в протоколе https</a></li>
+                <li><a href="ftp://ubisoft.com/games/example">Ссылка на файл на сервере FTP без авторизации</a></li>
+                <li><a href="ftp://user:password@ubisoft.com/games/example">С авторизацией</a></li>
+                <li>
+                    <a href="https://ru.wikipedia.org/wiki/Википедия:Внутренние_ссылки#На_что_следует_ссылаться">
+                        Ссылка на фрагмент страницы некоторого сайта
+                    </a>
+                </li>
+                <li><a href="#my_table">Cсылка на фрагмент текущей страницы</a></li>
+                <li><a href="https://idroo.com/?a=0&c=1">Cсылка с двумя параметрами</a></li>
+                <li>
+                    <ul>
+                        <li><a href="#element_id" title="О чём">Оглавление</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Ссылка с пустым href</a></li>
+                <li><a href="https://ru.top-cat.org" rel="nofollow">Запрет перехода поисковикам</a></li>
+                <li><a href="https://ru.top-cat.org" rel="noindex">Запрещенная для индексации поисковиками</a></li>
+                <li>
+                    <p>
+                        Я очень люблю читать самые смешные <a href="https://www.anekdot.ru">анекдоты.</a>
+                    </p>
+                </li>
+                <li>
+                    <a href="https://ru.wikipedia.org/wiki/Муравьи">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/Fire_ants02.jpg?uselang=ru" width="200" height="200" alt="">
+                    </a>
+                </li>
+                <li>
+                    <img src="https://upload.wikimedia.org/wikipedia/ru/6/63/Feels_good_man.jpg" width="200" height="200" usemap="#Лягушонок Пепе" alt="">
+                    <map name="Лягушонок Пепе">
+                        <area shape="circle" coords="100,100,50" href="https://www.youtube.com/watch?v=RsyxePZ_BzU&ab_channel=%D0%BD%D0%B5%D0%B1%D1%83%D0%B4%D0%B8" alt="">
+                        <area shape="rect" coords="150,150,200,200" href="https://ru.wikipedia.org/wiki/Прямоугольник" alt="">
+                    </map>
+                </li>
+                <li><a href="index.html">Относительная ссылка на index.html в текущем каталоге</a></li>
+                <li><a href="../index.html">Относительная ссылка на index.html в каталоге уровнем выше</a></li>
+                <li><a href="../../index.html">Относительная ссылка на index.html м на страницу в каталоге двумя уровнями выше текущего</a></li>
+                <li><a href="index.html">Сокращенная ссылка на главную</a></li>
+                <li><a href="#my_form">Сокращенная ссылка на внутреннюю</a></li>
+            </ol>
+            <br>
+        </div>
+<!--    </div>-->
 
-<!--    оформление таблицы-->
-<a name="my_table">
-<h1 class="content">Таблица</h1>
-    <table class="my_table">
-        <thead>
-        <tr class="table-primary">
-            <th colspan="3">Животные</th>
-        </tr>
-        <tr class="table-secondary">
-            <th>Птицы</th>
-            <th>Рыбы</th>
-            <th>Млекопитающие</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="table-primary">
-            <td>Орёл</td>
-            <td>Щука</td>
-            <td>Кот</td>
-        </tr>
-        <tr class="table-secondary">
-            <td>Курица</td>
-            <td>Сом</td>
-            <td>Собака</td>
-        </tr>
-        <tr class="table-primary">
-            <td>Гусь</td>
-            <td>Толстолобик</td>
-            <td>Волк</td>
-        </tr>
-        </tbody>
-    </table>
-</a>
-<br>
+            <!--    оформление таблицы-->
+<!--    <div class="row">-->
+        <div class="col-12">
+            <a name="my_table">
+                <h1 class="content">Таблица</h1>
+                <table class="my_table">
+                    <thead>
+                    <tr class="table-primary">
+                        <th colspan="3">Животные</th>
+                    </tr>
+                    <tr class="table-secondary">
+                        <th>Птицы</th>
+                        <th>Рыбы</th>
+                        <th>Млекопитающие</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="table-primary">
+                        <td>Орёл</td>
+                        <td>Щука</td>
+                        <td>Кот</td>
+                    </tr>
+                    <tr class="table-secondary">
+                        <td>Курица</td>
+                        <td>Сом</td>
+                        <td>Собака</td>
+                    </tr>
+                    <tr class="table-primary">
+                        <td>Гусь</td>
+                        <td>Толстолобик</td>
+                        <td>Волк</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </a>
+            <br>
+        </div>
+<!--    </div>-->
+
 
 <!--    оформление формы-->
-<a name="my_form">
-<h1 class="content">Форма</h1>
-<form class="my_form">
-<!--    оформление полей Фамилия, Имя, E-mail-->
-    <div class="form-group">
-        <!--        form-group используется для группировки элементов формы-->
-        <label class="form-label" for="my_name">Фамилия:</label>
-        <!--        form-label - для стилизации метки элемента формы-->
-        <br/>
-        <input name="my_name" id="my_last_name" value="Введите вашу фамилию:" class="form-control">
-    </div>
+<!--    <div class="row">-->
+            <a name="my_form">
+                <div class="col-12">
+                <h1 class="content">Форма</h1>
+                <form class="my_form">
+                    <!--    оформление полей Фамилия, Имя, E-mail-->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-group">
+                                <!--        form-group используется для группировки элементов формы-->
+                                <label class="form-label" for="my_name">Фамилия:</label>
+                                <!--        form-label - для стилизации метки элемента формы-->
+                                <br/>
+                                <input name="my_name" id="my_last_name" value="Введите вашу фамилию:" class="form-control">
+                            </div>
+                        </div>
+                    </div>
 
-    <div class="form-group">
-        <!--        form-group используется для группировки элементов формы-->
-        <label class="form-label" for="my_first_name">Имя:</label>
-        <!--        form-label - для стилизации метки элемента формы-->
-        <br/>
-        <input name="my_name" id="my_name" value="Введите ваше имя:" class="form-control">
-    </div>
+<!--                    <div class="row">-->
+                        <div class="col-12">
+                            <div class="form-group">
+                                <!--        form-group используется для группировки элементов формы-->
+                                <label class="form-label" for="my_first_name">Имя:</label>
+                                <!--        form-label - для стилизации метки элемента формы-->
+                                <br/>
+                                <input name="my_name" id="my_name" value="Введите ваше имя:" class="form-control">
+                            </div>
+                        </div>
+<!--                    </div>-->
 
-    <div class="form-group">
-        <!--        form-group используется для группировки элементов формы-->
-        <label class="form-label" for="my_email">E-mail:</label>
-        <!--        form-label - для стилизации метки элемента формы-->
-        <br/>
-        <input name="my_email" id="my_email" value="Введите вашу почту:" type="email" class="form-control">
-    </div>
+<!--                    <div class="row">-->
+                        <div class="col-12">
+                            <div class="form-group">
+                                <!--        form-group используется для группировки элементов формы-->
+                                <label class="form-label" for="my_email">E-mail:</label>
+                                <!--        form-label - для стилизации метки элемента формы-->
+                                <br/>
+                                <input name="my_email" id="my_email" value="Введите вашу почту:" type="email" class="form-control">
+                            </div>
+                        </div>
+<!--                    </div>-->
 
-<!--    оформление текстового поля даты-->
-    <div class="form-group">
-<!--        form-group используется для группировки элементов формы-->
-        <label class="form-label">Дата рождения:</label>
-        <br>
-<!--        form-label - для стилизации метки элемента формы-->
-        <input name="my_birthday" type="date" class="form-control">
-<!--        form-control применяется к элементу, чтобы сделать его стилизованным-->
-    </div>
+<!--                    <div class="row">-->
+                        <div class="col-12">
+                            <!--    оформление текстового поля даты-->
+                            <div class="form-group">
+                                <!--        form-group используется для группировки элементов формы-->
+                                <label class="form-label">Дата рождения:</label>
+                                <br>
+                                <!--        form-label - для стилизации метки элемента формы-->
+                                <input name="my_birthday" type="date" class="form-control">
+                                <!--        form-control применяется к элементу, чтобы сделать его стилизованным-->
+                            </div>
+                        </div>
+<!--                    </div>-->
 
-<!--    оформление многострочного текстового поля-->
-    <div class="form-group">
-        <label class="form-label">Заметки</label>
-        <br>
-        <textarea name="my_notes" class="form-control">Поделитесь здесь своими мыслями и предложениями</textarea>
-    </div>
+<!--                    <div class="row">-->
+                        <div class="col-12">
+                            <!--    оформление многострочного текстового поля-->
+                            <div class="form-group">
+                                <label class="form-label">Заметки</label>
+                                <br>
+                                <textarea name="my_notes" class="form-control">Поделитесь здесь своими мыслями и предложениями</textarea>
+                            </div>
+                        </div>
+<!--                    </div>-->
 
-    <!--    оформление списка с помощью combobox-->
-    <div class="form-group">
-        <label for="combobox" class="form-label"> Выберить Ваш пол:</label>
-        <div class="input-group">
-            <select id="combobox" name="combobox" class="form-select custom-select">
-                <option value="option1">Женский</option>
-                <option value="option2">Мужской</option>
-            </select>
+<!--                    <div class="row">-->
+                        <div class="col-12">
+                            <!--    оформление списка с помощью combobox-->
+                            <div class="form-group">
+                                <label for="combobox" class="form-label"> Выберить Ваш пол:</label>
+                                <div class="input-group">
+                                    <select id="combobox" name="combobox" class="form-select custom-select">
+                                        <option value="option1">Женский</option>
+                                        <option value="option2">Мужской</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+<!--                    </div>-->
+
+<!--                    <div class="row">-->
+                        <div class="col-12">
+                            <!--    оформление списка с множественным выбором-->
+                            <div class="form-group">
+                                <!-- form-group используется для группировки элементов формы-->
+                                <label class="form-label">Что нужно делать на курсах JS от Спормастера:</label>
+                                <br>
+                                <!--        form-label - для стилизации метки элемента форм-->
+                                <select name="my_super" class="form-select" multiple>
+                                    <!--        form-select применяется к элементу <select>, чтобы сделать его стилизованным.-->
+                                    <option value="1">Посещать лекционные и практические занятия</option>
+                                    <option value="2">Изучать материалы презентаций</option>
+                                    <option value="3">Читать информацию с презентации и переходить по ссылкам</option>
+                                    <option value="4">Сдавать задания</option>
+                                </select>
+                            </div>
+                        </div>
+<!--                    </div>-->
+
+<!--                    <div class="row">-->
+                        <div class="col-12">
+                            <!--    оформление радио кнопок-->
+                            <div class="form-group">
+                                <!--        form-group используется для группировки элементов формы-->
+                                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                    <!--            btn-group - для создания контейнера для радио-кнопок, а btn-group-toggle применяется к контейнеру, чтобы включить поведение переключения кнопок.-->
+                                    <label class="form-label">Какую оценку Вы хотите?</label>
+                                    <br>
+                                    <label class="btn btn-secondary active">
+                                        <input type="radio" name="my_radio" value="1" checked> 5
+                                    </label>
+                                    <label class="btn btn-secondary">
+                                        <input type="radio" name="my_radio" value="2"> 4
+                                    </label>
+                                    <label class="btn btn-secondary">
+                                        <input type="radio" name="my_radio" value="3"> 3
+                                    </label>
+                                    <label class="btn btn-secondary">
+                                        <input type="radio" name="my_radio" value="4"> 2
+                                    </label>
+                                    <label class="btn btn-secondary">
+                                        <input type="radio" name="my_radio" value="5"> 1
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+<!--                    </div>-->
+
+<!--                    <div class="row">-->
+                        <div class="col-12">
+                            <!--    Оформление checkbox и button-->
+                            <div class="form-group">
+                                <!--       form-group используется для группировки элементов формы-->
+                                <div class="form-check">
+                                    <!--            form-check используется для создания контейнера для чекбокса-->
+                                    <input class="form-check-input" type="checkbox" id="rulesCheckbox">
+                                    <label class="form-check-label" for="rulesCheckbox">С правилами этого сайта ознакомлен(-а)</label>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Отправить</button>
+                        </div>
+<!--                    </div>-->
+                </form>
+
         </div>
+            </a>
     </div>
 
-<!--    оформление списка с множественным выбором-->
-    <div class="form-group">
-        <!-- form-group используется для группировки элементов формы-->
-        <label class="form-label">Что нужно делать на курсах JS от Спормастера:</label>
-        <br>
-<!--        form-label - для стилизации метки элемента форм-->
-        <select name="my_super" class="form-select" multiple>
-<!--        form-select применяется к элементу <select>, чтобы сделать его стилизованным.-->
-            <option value="1">Посещать лекционные и практические занятия</option>
-            <option value="2">Изучать материалы презентаций</option>
-            <option value="3">Читать информацию с презентации и переходить по ссылкам</option>
-            <option value="4">Сдавать задания</option>
-        </select>
-    </div>
-
-<!--    оформление радио кнопок-->
-    <div class="form-group">
-<!--        form-group используется для группировки элементов формы-->
-        <div class="btn-group btn-group-toggle" data-toggle="buttons">
-<!--            btn-group - для создания контейнера для радио-кнопок, а btn-group-toggle применяется к контейнеру, чтобы включить поведение переключения кнопок.-->
-            <label class="form-label">Какую оценку Вы хотите?</label>
-            <br>
-            <label class="btn btn-secondary active">
-                <input type="radio" name="my_radio" value="1" checked> 5
-            </label>
-            <label class="btn btn-secondary">
-                <input type="radio" name="my_radio" value="2"> 4
-            </label>
-            <label class="btn btn-secondary">
-                <input type="radio" name="my_radio" value="3"> 3
-            </label>
-            <label class="btn btn-secondary">
-                <input type="radio" name="my_radio" value="4"> 2
-            </label>
-            <label class="btn btn-secondary">
-                <input type="radio" name="my_radio" value="5"> 1
-            </label>
-        </div>
-    </div>
-
-<!--    Оформление checkbox и button-->
-    <div class="form-group">
-<!--       form-group используется для группировки элементов формы-->
-        <div class="form-check">
-<!--            form-check используется для создания контейнера для чекбокса-->
-            <input class="form-check-input" type="checkbox" id="rulesCheckbox">
-            <label class="form-check-label" for="rulesCheckbox">С правилами этого сайта ознакомлен(-а)</label>
-        </div>
-    </div>
-    <button type="submit" class="btn btn-primary">Отправить</button>
-</form>
-</a>
-</div>
-
+<!--</div>-->
 <!--оформление footer-->
 <footer class="my_footer">
     <p>© Баева Диана </p>
